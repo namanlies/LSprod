@@ -1,0 +1,170 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.heading {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.App-header {
+  background-color: red;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.FloatLoginComponent {
+  position: fixed;
+  bottom: 40px;
+  right: 20px;
+  background: rgba(3, 3, 3, 0.35);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 10px;
+  z-index: 9999;
+  padding: 15px 20px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.linkLogo1 {
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  z-index: 9999;
+}
+
+.signIn_Form {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.FloatLoginComponent_modal {
+  position: relative;
+  width: 200px;
+  /* padding-right: 20px; */
+}
+
+.button_container {
+  display: flex;
+  justify-content: center;
+}
+
+.signIn_Form button {
+  margin-top: 10px;
+  border-radius: 5px;
+  padding: 3px 10px;
+  background-color: #2ea44f;
+  color: #fff;
+  border: none;
+}
+
+.signIn_Form input {
+  border-radius: 5px;
+  padding: 2px 5px;
+  background-color: #ffffff57;
+  border: 1px solid gray;
+  color: #fff;
+}
+
+.signIn_Form input:focus,
+.signIn_Form button:focus {
+  outline: none;
+}
+
+.signIn_Form input::placeholder {
+  color: #fff;
+}
+
+.FloatLoginComponent_modal .close_btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  border: none;
+  background-color: #ffffff00;
+  font-weight: 700;
+  color: #fff;
+}
+
+.signIn_btn {
+  border: none;
+  background-color: #ffffff00;
+  border-radius: 5px;
+  z-index: 9999;
+  font-weight: 600;
+  border-radius: 10px;
+  color: #fff;
+}
+
+.singin_msg {
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: #fff;
+}
+
+@media (max-width: 767px) {
+  .FloatLoginComponent,
+  .linkLogo1 {
+    top: auto;
+    right: auto;
+    left: 8%;
+    bottom: 40px;
+  }
+  .FloatLoginComponent_modal {
+    width: 75vw;
+  }
+  .singin_msg {
+    font-size: 18px;
+  }
+  .logo_handler {
+    margin-left: 10px;
+  }
+  .logo_handler img {
+    height: 50px;
+    width: 50px;
+  }
+  .signIn_Form {
+    gap: 10px;
+  }
+  .signIn_Form input {
+    padding: 5px 10px;
+  }
+  .signIn_Form button {
+    margin-top: 5px;
+    padding: 5px 15px;
+  }
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
